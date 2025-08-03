@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get It Done ✨</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>✨ Your Work Desk ✨</h1>
+            <p>Stay organized, stay motivated, achieve your goals!</p>
+        </div>
+
+        <div class="nav-buttons">
+            <button class="nav-btn active" onclick="showSection('tasks')">
+                📋 Today's Tasks
+            </button>
+            <button class="nav-btn" onclick="showSection('selfcare')">
+                🌸 Self Care
+            </button>
+            <button class="nav-btn" onclick="showSection('projects')">
+                🚀 Project Updates
+            </button>
+            <button class="nav-btn" onclick="showSection('tests')">
+                📚 Tests/Mock
+            </button>
+        </div>
+
+        <!-- Today's Tasks Section -->
+        <div id="tasks" class="section active">
+            <h2 class="section-title">📋 Today's Tasks</h2>
+            <div class="task-input-container">
+                <input type="text" id="taskInput" class="task-input" placeholder="Enter your task...">
+                <select id="prioritySelect" class="priority-select">
+                    <option value="low">Low Priority</option>
+                    <option value="medium">Medium Priority</option>
+                    <option value="high">High Priority</option>
+                </select>
+                <button class="add-task-btn" onclick="addTask()">➕ Add Task</button>
+            </div>
+            <div id="taskList" class="task-list"></div>
+        </div>
+
+        <!-- Self Care Section -->
+        <div id="selfcare" class="section">
+            <h2 class="section-title">🌸 Self Care</h2>
+            <div class="quote-container">
+                <div class="quote-text" id="dailyQuote"></div>
+                <div class="quote-author" id="quoteAuthor"></div>
+            </div>
+            <div class="self-care-grid">
+                <div class="self-care-box">
+                    <div class="self-care-title">💧 Water Intake</div>
+                    <input type="text" class="entry-input" placeholder="e.g., 8 glasses, 2 liters..." id="waterInput">
+                    <button class="add-entry-btn" onclick="addEntry('water')">Add Entry</button>
+                    <div class="entries-list" id="waterEntries"></div>
+                </div>
+                <div class="self-care-box">
+                    <div class="self-care-title">🧘 Meditation Time</div>
+                    <input type="text" class="entry-input" placeholder="e.g., 10 minutes morning meditation..." id="meditationInput">
+                    <button class="add-entry-btn" onclick="addEntry('meditation')">Add Entry</button>
+                    <div class="entries-list" id="meditationEntries"></div>
+                </div>
+                <div class="self-care-box">
+                    <div class="self-care-title">✨ Manifestation</div>
+                    <textarea class="entry-input" placeholder="Write your manifestations..." id="manifestationInput"></textarea>
+                    <button class="add-entry-btn" onclick="addEntry('manifestation')">Add Entry</button>
+                    <div class="entries-list" id="manifestationEntries"></div>
+                </div>
+                <div class="self-care-box">
+                    <div class="self-care-title">✍️ To God</div>
+                    <textarea class="entry-input" placeholder="Journal your thoughts..." id="writingInput"></textarea>
+                    <button class="add-entry-btn" onclick="addEntry('writing')">Add Entry</button>
+                    <div class="entries-list" id="writingEntries"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Updates Section -->
+        <div id="projects" class="section">
+            <h2 class="section-title">🚀 Project Updates</h2>
+            <button class="add-project-btn" onclick="addProject()">➕ Add New Project</button>
+            <div id="projectContainer" class="project-container"></div>
+        </div>
+
+        <!-- Tests Section -->
+        <div id="tests" class="section">
+            <h2 class="section-title">📚 Tests and Mock</h2>
+            <div class="test-columns">
+                <div class="test-column">
+                    <div class="test-column-title assigned-title">📝 Assigned</div>
+                    <div class="test-input-container">
+                        <input type="text" id="assignedTestInput" class="test-input" placeholder="Enter test details...">
+                        <button class="add-task-btn" onclick="addTest('assigned')">➕</button>
+                    </div>
+                    <div id="assignedTests"></div>
+                </div>
+                <div class="test-column">
+                    <div class="test-column-title upcoming-title">⏰ Upcoming</div>
+                    <div class="test-input-container">
+                        <input type="text" id="upcomingTestInput" class="test-input" placeholder="Enter upcoming test...">
+                        <button class="add-task-btn" onclick="addTest('upcoming')">➕</button>
+                    </div>
+                    <div id="upcomingTests"></div>
+                </div>
+                <div class="test-column">
+                    <div class="test-column-title completed-title">✅ Completed</div>
+                    <div id="completedTests"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
