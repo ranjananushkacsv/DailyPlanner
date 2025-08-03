@@ -167,10 +167,10 @@ function addProject() {
         id: Date.now(),
         name: projectName,
         stages: [
-            { text: 'BrainStorming and TechStack', completed: false },
-            { text: 'Coding/ Model/ Dashboards - Core Part', completed: false },
-            { text: 'Documentation', completed: false },
-            { text: 'GitHub and Deployment', completed: false }
+            { text: 'Planning', completed: false },
+            { text: 'In Progress', completed: false },
+            { text: 'Testing', completed: false },
+            { text: 'Completed', completed: false }
         ]
     };
     
