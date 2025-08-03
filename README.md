@@ -1,4 +1,4 @@
-✨ Anushka's Work Station ✨
+✨ Work Station ✨
 A beautiful, modern productivity dashboard designed to help you stay organized, motivated, and achieve your daily goals. This personal workspace combines task management, self-care tracking, project updates, and test management in one sleek interface.
 Show Image Show Image Show Image Show Image
 🌟 Features
@@ -33,7 +33,7 @@ Visual progress indicators with checkboxes for each stage
 Dynamic project creation with custom naming
 Project deletion functionality for completed or cancelled projects
 
-📚 Test Management (CDC)
+📚 Test Management
 
 Three-column Kanban-style layout:
 
@@ -46,7 +46,7 @@ Drag-and-drop style workflow (mark assigned tests as complete)
 Test deletion across all categories
 Automatic timestamping for completed tests
 
-🎨 Design Features
+🎨 Design Features That Was Focused On
 
 Modern glassmorphism design with blur effects and transparency
 Responsive layout that works on desktop, tablet, and mobile
@@ -58,14 +58,8 @@ Accessible color scheme with proper contrast ratios
 🚀 Quick Start
 
 Clone the repository
-bashgit clone https://github.com/yourusername/anushka-work-station.git
-cd anushka-work-station
-
-Open in browser
-bash# Simply open index.html in your preferred browser
-open index.html
-# or
-double-click index.html
+bashgit clone https://github.com/ranjananushkacsv/work-station.git
+cd work-station
 
 Start organizing!
 
@@ -83,6 +77,7 @@ anushka-work-station/
 ├── style.css           # All styling and animations
 ├── script.js           # JavaScript functionality
 └── README.md           # Project documentation
+
 🛠️ Technologies Used
 
 HTML5 - Semantic markup structure
@@ -90,26 +85,6 @@ CSS3 - Modern styling with flexbox, grid, and animations
 Vanilla JavaScript - Dynamic functionality and data management
 No external dependencies - Lightweight and fast loading
 
-💾 Data Persistence
-Currently, the application stores data in memory during the session. To implement persistent storage:
-
-Uncomment localStorage functions in script.js
-Enable data persistence by uncommenting lines in saveData() and loadData() functions
-
-javascript// Uncomment these lines in script.js for persistent storage
-localStorage.setItem('anushkaDesk', JSON.stringify({
-    tasks,
-    selfCareEntries,
-    projects,
-    tests
-}));
-🎯 Usage Tips
-
-Daily Workflow: Start each day by reviewing yesterday's completed tasks and adding new ones
-Priority Management: Use High priority for urgent tasks, Medium for important ones, and Low for nice-to-have items
-Self-Care Routine: Make it a habit to log your water intake and meditation sessions
-Project Tracking: Break down large projects into the four provided stages for better progress visibility
-Test Organization: Move tests from Assigned → Completed when finished, use Upcoming for future planning
 
 🔮 Future Enhancements
 
@@ -140,12 +115,6 @@ Open a Pull Request
 
 📄 License
 This project is open source and available under the MIT License.
-🙏 Acknowledgments
-
-Design inspiration from modern productivity apps
-Gradient backgrounds created with CSS3
-Motivational quotes from various inspirational figures
-Icon emojis for visual enhancement
 
 📧 Contact
 Created with ❤️ by Anushka
